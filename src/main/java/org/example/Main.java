@@ -38,8 +38,8 @@ public class Main {
 
             System.out.println(categories);
 
-            db.updateRow("categories", "name", UUID.fromString("758e04c3-47b6-4a9c-8fcd-54269316dcc7"), "Офисные товары");
-            db.deleteRow("categories", UUID.fromString("758e04c3-47b6-4a9c-8fcd-54269316dcc7"));
+             db.updateRow("categories", "name", UUID.fromString("758e04c3-47b6-4a9c-8fcd-54269316dcc7"), "Офисные товары");
+             db.deleteRow("categories", UUID.fromString("758e04c3-47b6-4a9c-8fcd-54269316dcc7"));
 
             ResultSet rs2 = db.getData("categories");
             categories = new ArrayList<>();
